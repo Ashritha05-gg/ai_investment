@@ -309,9 +309,12 @@ function App() {
     setData(null);
 
     try {
+      // const response = await fetch(
+      //   `http://127.0.0.1:8000/analyze/${stockSymbol}`
+      // );
       const response = await fetch(
-        `http://127.0.0.1:8000/analyze/${stockSymbol}`
-      );
+  `http://13.201.222.136:8000/analyze/${stockSymbol}`
+);
 
       const result = await response.json();
 
